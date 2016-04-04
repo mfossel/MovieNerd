@@ -14,7 +14,7 @@
     <div class="container">
 
         <div class="jumbotron">
-            <img src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fimages.sodahead.com%2Fpolls%2F003419515%2F846487417_5551639559_9c70fd0e45_z_xlarge.jpeg&f=1" class="img-responsive center-block" />
+            <img src="img/nerd.jpg" class="img-responsive center-block" style="height:250px; width:auto;"/>
             <div class="input-group" style="margin-top:5px">
                 <span class="input-group-btn">
                     <button class="btn btn-default" type="button" ng-click="search()" style="margin-top:20px">
@@ -29,9 +29,9 @@
         <div class="row" style="margin-top:40px">
             <div class="col-xs-12 col-sm-12 col-md-4" ng-repeat="movie in movies">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">{{movie.Title}}</div>
+                    <div class="panel-heading center-block">{{movie.Title}} </div>
                     <div class="panel-body">
-                        <img src={{movie.Poster}}/>
+                        <img src={{movie.Poster}} class="img-responsive" style="height:250px; width:auto;" />
                                          
                         <small>Released: {{movie.Year}}</small>
                         <p></p><a ng-href="http://www.imdb.com/title/{{movie.imdbID}}"> Click for IMDB page</a></p>
